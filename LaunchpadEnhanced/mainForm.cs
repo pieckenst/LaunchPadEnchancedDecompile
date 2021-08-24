@@ -114,14 +114,14 @@ namespace LaunchpadEnhanced
 
 		private int mainLength;
 
-		protected override void Dispose(bool disposing)
-		{
-			if (disposing && components != null)
-			{
-				components.Dispose();
-			}
-			base.Dispose(disposing);
-		}
+		//protected override void Dispose(bool disposing)
+		//{
+			//if (disposing && components != null)
+			//{
+				//components.Dispose();
+			//}
+			//base.Dispose(disposing);
+		//}
 
 		private void InitializeComponent()
 		{
@@ -934,7 +934,7 @@ namespace LaunchpadEnhanced
 			try
 			{
 				arrayList = getSkinProperty("form", skinName);
-				base.ClientSize = new Size(int.Parse("500"), int.Parse("600"));
+				base.ClientSize = new Size(int.Parse("732"), int.Parse("600"));
 				base.TransparencyKey = (Color)TypeDescriptor.GetConverter(typeof(Color)).ConvertFromString("black");
 				BackgroundImage = Image.FromFile(LPE.commonFiles + "skins\\" + skinName + "\\background.png");
 				arrayList = getSkinProperty("closeButton", skinName);

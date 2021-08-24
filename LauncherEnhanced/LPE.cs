@@ -314,10 +314,11 @@ namespace LauncherEnhanced
 				{
 					File.Delete(commonFiles + "version.txt");
 				}
-				download(installerLocation + "version.txt", commonFiles + "version.txt");
+				//download(installerLocation + "version.txt", commonFiles + "version.txt");
 				if (!unfixableError)
 				{
-					ArrayList arrayList = readFileToString(commonFiles + "version.txt");
+					ArrayList arrayList = new ArrayList();
+					arrayList.Add("1.0.0.0");
 					if (!File.Exists(commonFiles + "config.cfg"))
 					{
 						try
@@ -352,26 +353,25 @@ namespace LauncherEnhanced
 						catch
 						{
 						}
-						if (!download(installerLocation + "LaunchpadEnhanced.exe", appLocation + "LaunchpadEnhanced.exe.temp"))
-						{
-							try
-							{
-								File.Move(appLocation + "LaunchpadEnhanced.exe.old", appLocation + "LaunchpadEnhanced.exe");
-							}
-							catch
-							{
-								download(installerLocation + "LaunchpadEnhanced.exe", appLocation + "LaunchpadEnhanced.exe");
-							}
-						}
-						else
-						{
-							File.Move(appLocation + "LaunchpadEnhanced.exe", appLocation + "LaunchpadEnhanced.exe.old");
-							File.Move(appLocation + "LaunchpadEnhanced.exe.temp", appLocation + "LaunchpadEnhanced.exe");
-						}
-						checkSkinIntegrity();
-						checkLoadingIntegrity();
+						//if (!download(installerLocation + "LaunchpadEnhanced.exe", appLocation + "LaunchpadEnhanced.exe.temp"))
+						//{
+							//try
+							//{
+								//File.Move(appLocation + "LaunchpadEnhanced.exe.old", appLocation + "LaunchpadEnhanced.exe");
+							//}
+							//catch
+							//{
+								//download(installerLocation + "LaunchpadEnhanced.exe", appLocation + "LaunchpadEnhanced.exe");
+							//}
+						//}
+						
+							//File.Move(appLocation + "LaunchpadEnhanced.exe", appLocation + "LaunchpadEnhanced.exe.old");
+							//File.Move(appLocation + "LaunchpadEnhanced.exe.temp", appLocation + "LaunchpadEnhanced.exe");
+						
+						//checkSkinIntegrity();
+						//checkLoadingIntegrity();
 						setConfigItem("timesRun", "1");
-						Application.Restart();
+						//Application.Restart();
 						return true;
 					}
 					return false;
