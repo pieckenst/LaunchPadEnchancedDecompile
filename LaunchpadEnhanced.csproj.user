@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="LaunchpadEnhanced\AddServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LaunchpadEnhanced\EditServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LaunchpadEnhanced\ErrorReportMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LaunchpadEnhanced\GetCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LaunchpadEnhanced\GetInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LaunchpadEnhanced\InitialEmuSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LaunchpadEnhanced\MacroLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LaunchpadEnhanced\MacroSharing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LaunchpadEnhanced\mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LaunchpadEnhanced\Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LaunchpadEnhanced\PHPTunnel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LaunchpadEnhanced\ServerChoose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LaunchpadEnhanced\SmoothProgressBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="LaunchpadEnhanced\StartLoadscreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LaunchpadEnhanced\ThemeBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
