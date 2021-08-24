@@ -704,7 +704,7 @@ namespace LaunchpadEnhanced
 						updateServerInfo();
 						LPE.loadingStatus = "Downloading Interface";
 						LPE.loadingStatusPercentage = 80;
-						syncSkins();
+						//syncSkins();
 						applySkin(LPE.currentSkin);
 						LPE.checkLoadingIntegrity();
 						setLoadingScreen();
